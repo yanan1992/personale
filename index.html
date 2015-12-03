@@ -1,75 +1,126 @@
-<!doctype>
+﻿<!DOCTYPE HTML>
 <html>
-<head>
-<meta charset="utf-8">
-<title>后英语时代</title>
-</head>
-<body>
-<header>
-<h1>后英语时代</h1>
-<nav>
-<ul>
-<li><a href="">首页</a></li>
-<li><a href="">活动</a></li>
-<li><a href="">话题</a></li>
-<li><a href="">社区</a></li>
-</ul>
-</nav>
-</header>
-<section id="idea">
-<div><h2>后英语时代：</h2><p>当英语已经作为我们生活中的重要的沟通手段时，如何丰富自己的生活，拓展自己的人</p></div>
-</section>
-<section id="activity">
-<div class="up">
-<div id="calender" class="left_part"></div>
-<div id="info" class="right_part">
-<div id="bulletin">
-<h3>公告栏</h3>
-<p>每周日下午三点到五点英文影视</p>
-</div>
-</div>
-</div>
-<div class="down">
-<h3>发现活动</h3>
-<div id="act_slides"></div>
-</div>
-</section>
-<section id="post">
-<h3>社区文章</h3>
-<article id="posts">
-<article id="item">
-<figure><img/></figure>
-<div class="header"><h4>
-<a href=""title=""></a>
-<span>作者：tom<time datetime="2013-10-12 19:03" pubdate>2013-10-12 19:03</time></span>
-</h4>
-</div>
-<div class="body"></div>
-<div class="footer"></div>
-</article>
-<article id="item">
-<figure><img/></figure>
-<div class="header"><h4>
-<a href=""title=""></a>
-<span>作者：tom<time datetime="2013-10-12 19:03" pubdate>2013-10-12 19:03</time></span>
-</h4>
-</div>
-<div class="body"></div>
-<div class="footer"></div>
-</article>
-<article id="item">
-<figure><img/></figure>
-<div class="header"><h4>
-<a href=""title=""></a>
-<span>作者：tom<time datetime="2013-10-12 19:03" pubdate>2013-10-12 19:03</time></span>
-</h4>
-</div>
-<div class="body"></div>
-<div class="footer"></div>
-</article>
-</article>
-<aside id="others"></aside>
-</section>
-<footer><ul></ul><address>m</address></footer>
-</body>
+	<head>
+	    <meta charset="utp-8">
+		<title>innocent</title>
+		<link href="./css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+		</script>
+	</head>
+	<body>
+		
+	<div class="header">
+		<div class="wrap">
+			
+			<div class="logo">
+				<a href="#">Personale</a>
+			</div>
+			
+			<div class="top-nav">
+				<ul>
+					<li class="active"><a href="#me" class="scroll">Me</a></li>
+					<li><a href="#skills" class="scroll">Skills</a></li>
+					<li><a href="#works" class="scroll">Work</a></li>
+					<li><a href="#contact" class="scroll">Contact</a></li>
+				</ul>
+			</div>
+			<div class="clear"> </div>
+			
+	     </div>
+	</div>
+
+	<div class="content">
+		<div class="grid1" id="me">
+			<a href="#"><img src="./images/g2.png" title="name" class="pic"/></a>
+			<h3><img src="images/family.png">西北师范大学 王亚楠</h3>
+			<p>18109460318@qq.com</p>
+			<p>17793601776</p>
+		</div>
+		<div class="grid2" id="skills">
+		
+			<h3>Skill</h3>
+			<p>HTML/CSS/javascript/jQuery/bootstrap</p>
+			<ul>
+				<li>
+					<img src="./images/s2.png" title="Artdirector" />
+					<a href="#">Adobe premier</a>
+				</li>
+				<li>
+					<img src="./images/s6.png" title="Artdirector" />
+					<a href="#">Camtasia studio</a>
+				</li>
+				<li>
+					<img src="./images/s3.png" title="Artdirector" />
+					<a href="#">Adobe Photoshop</a>
+				</li>
+				<li>
+					<img src="./images/g6.png" title="Artdirector" />
+					<a href="#">Adobe Flash</a>
+				</li>
+			</ul>
+		</div>
+		<div class="grid3"id="works">
+		<section id="project-one">
+			<item class="img-box">
+			   <div class="img-shadow">
+			      <img src="images/pro1.jpg" alt="company">
+			    </div>
+			</item>
+			<item class="text">
+				<h3>甘肃新航程电子商务有限公司网站前台制作</h3>
+			    <p><span>职务：</span>网站前台页面制作</p>
+			    <p><span>工作：</span>甘肃新航程电子商务有限公司网站前台制作</p>
+			    <p><span>备注：</span>第一次正式参与公司项目，基本上巩固了html+css的编写，能够单独的完成一个完整
+页面以及很快完成整个网站的前台切图</p>
+			</item>
+		</section>
+		<section id="project-two">
+			<item class="text">
+			    <h3>siteserver平台支持下的甘肃农资网及甘肃乡村旅游网</h3>
+			    <p><span>职务：</span>项目经理</p>
+			    <p><span>工作：</span>学习siteserver语言，对前台页面的进行修改、网站上线工作以及协调团队</p>
+			    <p><span>备注：</span>甘肃乡村旅游网，主要介绍甘肃特色的乡村旅游资源;农资网主要为甘肃的农户们提供农业资讯
+</p>
+			</item>
+			<item class="img-box">
+			   <div class="img-shadow">
+			      <a href="http://www.gsxcly.com/"><img src="images/pro2.jpg" alt="siteserver"></a>
+			    </div>
+			</item>
+		</section>
+		<section id="project-three">
+			<item class="img-box">
+			   <div class="img-shadow">
+			     <a href="http://180.153.42.89:66/"><img src="images/pro3.jpg" alt="lgw"></a>
+			    </div>
+			</item>
+			<item class="text">
+			    <h3>甘肃林果网</h3>
+			    <p><span>职务：</span>网站前台页面制作</p>
+			    <p><span>工作：</span>负责工作：前台页面切图并配合后端工程师完成网站，现在正在线上测试</p>
+			    <p><span>备注：</span>项目期间学习了ASP.NET MVC模型、ajax等网页制作相关技术，对页面设计有新认识</p>
+			</item>
+		</section>
+		</div>
+<div class="contact" id="contact">
+	<div class="catch-me">
+			<h3>SAY HELLO</h3>
+			<p>一枚靠谱的女文艺青年</p>
+			<ul>
+				<li><a href="http://weibo.com/3040408717/profile?topnav=1&wvr=6"><img src="./images/weibo.png" title="微博" /></a></li>
+				<li><a href="#"><img src="./images/qq.png" title="qq" /></a></li>
+				<li><a href="#"><img src="./images/email.png" title="email" /></a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	</body>
 </html>
+
